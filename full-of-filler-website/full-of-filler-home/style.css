@@ -1,0 +1,180 @@
+body ,html {
+  color: #777;
+  height: 100%;
+  margin: 0;
+  font: 400 15px "Lato", sans-serif;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bgimg-1 {
+  background-image: url('forest-haze.jpg');
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url('adventure-calm-clouds.jpg');
+  min-height: 600px;
+}
+
+.bgimg-3 {
+  background-image: url('black-and-white-fog-edit.jpg');
+  min-height: 600px;
+}
+
+.bgimg-4 {
+  background-image: url('cold-conifer-dawn.jpg');
+  min-height: 600px;
+}
+
+.caption{
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+div.border-1, div.border-2, div.border-3, div.border-4 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+div.border-1 {
+  width: 250px;
+}
+
+div.border-2 {
+  width: 250px;
+}
+
+div.border-3 {
+  width: 250px;
+}
+
+div.border-4 {
+  width: 250px;
+  margin-bottom: 0;
+}
+
+.title-main {
+  font: 400 25px "Lato", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.title-sub {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font: 400 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.content {
+  background: #fff;
+  margin: auto;
+  width: 80%;
+  padding: 50px 80px;
+  color: #888;
+  font: 400 20px "Lato", sans-serif;
+}
+
+.content p {
+  text-align: center;
+  font: 400 15px "Lato", sans-serif;
+}
+
+/* Formatting for Endbar: Copy this to every page on Full of Filler Site. */
+.endbar {
+  background: #111;
+  margin: 0;
+  padding: 20px;
+}
+
+.copyright {
+  font-size: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: right;
+}
+
+.endbar p {
+  padding: 10px;
+}
+
+.button-home a, .button-FAQ a {
+  font: 400 15px "Lato", sans-serif;
+  letter-spacing: .5px;
+  padding: 0;
+  color: #fff;
+}
+
+.button-home, .button-FAQ{
+  border-radius: 4px;
+  background-color: #000;
+  text-align: center;
+  border-style: none;
+  padding: 10px;
+  margin: 10px;
+  transition: all 0.5s;
+  /*cursor: pointer;*/
+}
+
+.button-home {
+  width: 200px;
+}
+
+.button-FAQ {
+  width: 200px;
+}
+
+.button-home a, .button-FAQ a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.button-home a:after, .button-FAQ a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-home:hover a, .button-FAQ:hover a {
+  padding-right: 25px;
+}
+
+.button-home:hover a:after, .button-FAQ:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+/* End of Endbar */
+
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: scroll;
+  }
+}
